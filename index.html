@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante de livro</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <style>
+        body {
+           
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            background-color: #060212;
+            font-family: 'Roboto', sans-serif;
+            color:#f6ebdd;
+            width: 100%;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+
+        section{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 20 0 20 0px;
+            
+        }
+            
+            
+
+        img{
+            border: solid ;
+           max-width: 80%;
+           max-height: 50%;
+        }
+      
+        h1{
+            font-size:2rem;
+        }
+           
+          
+        h3{
+            font-size: 1.5rem;
+            padding: 3px;
+            cursor: pointer;
+        }
+            
+
+
+      
+        p{
+            font-size: 14px;
+        }
+
+        ol{
+            list-style-type: none; 
+        }
+        ol li a{
+            text-decoration: none;
+        }
+
+        .livro{
+            display: none;
+        }
+        .item:hover .livro{
+            display: block;
+        }
+
+        .mais {
+            display: none;
+        }
+
+        .sinopse:hover .mais{
+            display: block;
+        }
+
+        table{
+            margin-top: 10px;
+            font-size: .8rem;
+            width: 100%;
+            border: solid 1px;
+        }
+
+        button{
+           
+            background-color: #fffcff;
+            margin-top: 40px;
+            width: 40%;
+            font-size: 20px;
+            border-radius: 15px;   
+            border: none;
+            padding: 5px;
+            text-align: center;
+        }
+
+        button a {
+            color:#fc1a1a ;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        button,a:hover{
+            background-color: transparent;
+           text-decoration: none;
+           color: #fffcff;
+
+        }
+
+            
+
+        
+    
+    </style>
+
+</head>
+
+<body>
+    <div id="home" style="text-align: center ; background-color:#cf023b ;">
+        <h1 style="color: #fffcff;">Estante Virtual</h1>
+        <p style="color: #fffcff; font-size: 1rem;">Grandes classicos da literatura contemporânea</p>
+    </div>
+
+    <div class="item">
+        <h2 style="cursor:pointer; text-align: center;">Sumario:</h2>
+        
+        <div class="livro">
+            <ol style="text-align: center;">
+                <li><a href="#1">Árvore Vermelha</a></li>
+                <li><a href="#2">Sombra, Onda e Espelho</a></li>
+                <li><a href="#3">Onde Vivem os Monstros</a></li>
+                <li><a href="#4">Ter Um Patinho é Útil</a></li>
+                <li><a href="#5">À Esquerda, à Direita</a></li>
+            </ol>
+                
+        </div>
+
+    </div>
+
+    <section id="1" style="background-color:#0d0f36 ;">
+        <h3 style="color: #f70b17; background-color:#008c9e;">A Árvore Vermelha</h3>
+        <img src="./img/arvore.jpg" alt="">
+        <div class="sinopse">
+            <h3 style="color: #f70b17; background-color: #008c9e;">Sinopse-Ver mais</h3>
+            <div class="mais">
+
+                <p style="color: #e6dddc;">Com ilustrações surrealistas e cotidianos pintados com toques de fantasia, o autor e ilustrador australiano
+            ShaunTan, aposta num universo cheio de imaginação para fazer com que as crianças sintam-se parte da
+            narrativa. Conta o dia de uma menina que se sente sozinha, triste e sem sorte até que uma árvore vermelha
+            aparece e começa a crescer, transformando esses sentimentos em esperança. É um delicado aviso de que até os
+            piores dias do mundo tem fim.</p>
+            </div>
+        
+        </div>
+        
+        <table >
+            <tr>
+                <th>Ano de publicação</th>
+                <th>Autor</th>
+                <th>Origem</th>
+                <th>Gênero</th>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>ShaunTan</td>
+                <td>Austrália</td>
+                <td>Infatil</td>
+            </tr>
+        </table>
+        <button><a href="#home">inicio</a></button>
+    </section>
+
+
+    <section id="2" style="background-color:#3e1c33 ;">
+        <h3 style="color: #fffcff; background-color: #130912;">Sombra, Onda e Espelho</h3>
+        <img src="./img/espelho-nova-edicao.jpg" alt="">
+        <div class="sinopse">
+            <h3 style=" background-color:  #130912; ">Sinopse</h3>
+            <div class="mais"><p style="color: #fffcff;">A autora sul-coreana Suzy Lee é uma das que utiliza o livro como um brinquedo. Sombra, Onda e Espelho são
+            três volumes que se complementam. Funcionam como uma brincadeira interativa que inova em formatos e jeitos
+            de manusear. Cada um deles, lidos separadamente, assume a interpretação de uma garota em relação aos temas
+            dos títulos. As crianças são convidadas a virar o livro de ponta cabeça, girá-lo e interagir com a narrativa
+            usando a imaginação.</p>
+        </div>
+        
+        </div>
+        
+        <table>
+            <tr>
+                <th>Ano de publicação</th>
+                <th>Autor</th>
+                <th>Origem</th>
+                <th>Gênero</th>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Suzy Lee</td>
+                <td>Coreia do Sul</td>
+                <td>Infantil</td>
+            </tr>
+        </table>
+        <button><a href="#home">inicio</a></button>
+    </section>
+
+
+    <section id="3" style="background-color:#045071 ;">
+        <h3 style="color: #111113; background-color: #00dffc;">Onde Vivem os Monstros</h3>
+        <img src="./img/onde vivem os monstro.jpg" alt="">
+        <div class="sinopse">
+            <h3 style="background-color:#00dffc ; color:#060212;">Sinopse</h3>
+            <div class="mais"><p style="color:#060212;">Maurice Sendak foi um autor e ilustrador judeu americano que ficou internacionalmente conhecido por esta
+            obra, adaptada para o cinema em 2009. Publicado pela primeira vez em 1963, o livro já vendeu mais de 19
+            milhões de cópias pelo mundo. Conta a história de Max, um garoto de cinco anos, que é colocado de castigo
+            pela mãe após aprontar suas travessuras. No quarto, entediado e sozinho, o garoto começa a imaginar um mundo
+            fantástico onde conhece todos os tipos de monstros. Seus monstros interiores. </p></div>
+        </div>
+        
+        <table >
+            <tr>
+                <th>Ano de publicação</th>
+                <th>Autor</th>
+                <th>Origem</th>
+                <th>Gênero</th>
+            </tr>
+            <tr>
+                <td>1963</td>
+                <td>Maurice Sendak</td>
+                <td>Americano</td>
+                <td>infantil</td>
+            </tr>
+        </table>
+        <button><a href="#home">inicio</a></button>
+    </section>
+
+
+    <section id="4" style="background-color: #fee78a;">
+        <h3 style="color:#060212 ; background-color: #ff9934;">Ter Um Patinho é Útil</h3>
+        <img src="./img/patinho.jpg" alt="">
+        <div class="sinopse">
+            <h3 style="color:#060212; background-color: #ff9934;">Sinopse</h3> 
+            <div class="mais">
+                <p style="color: #060212;">Vencedora do prêmio Prêmio Astrid Lindgren Memorial, a autora e ilustradora argentina Isol, foi homenageada
+            por conseguir traduzir a complexidade do mundo adulto para as crianças. Ela constrói uma narrativa divertida
+            que trabalha duas percepções sobre a utilidade. De um lado, um garoto conta por que ter um patinho de
+            borracha é útil. Do outro lado do livro, é a vez do patinho contar por que ter um menino o beneficia. É uma
+            excelente oportunidade de mostrar que toda história tem dois lados, e fazer as crianças refletirem sobre sua
+            autoimagem sob o olhar do outro.</p>
+        </div>
+        
+        </div>
+        
+        <table style="color:#060212 ;">
+            <tr>
+                <th>Ano de publicação</th>
+                <th>Autor</th>
+                <th>Origem</th>
+                <th>Gênero</th>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>Isol Misenta</td>
+                <td>Argentina</td>
+                <td>Infantil</td>
+            </tr>
+        </table>
+        <button><a href="#home">inicio</a></button>
+    </section>
+
+
+    <section id="5">
+        <h3 style="background-color: #00dffc; color:#060212">À Esquerda, à Direita</h3>
+        <img src="./img/direita.jpg" alt="">
+        <div class="sinopse">
+            <h3 style="background-color: #00dffc; color:#060212">Sinopse</h3>
+            <div class="mais">
+                <p>Solidão, respeito ao outro, beleza da vida. Esses são alguns temas que podem ser encontrados nas obras do
+                autor e ilustrador chinês Jimmy Liao . Ele trabalha o desencontro de duas pessoas que tomam caminhos
+                diferentes. Além de explicar sobre o respeito pelas escolhas de cada um, o livro ensina outro belo tema,
+                para crianças e para adultos: a inevitabilidade da vida.</p>
+            </div>
+            
+        </div>
+        <table>
+            <tr>
+                <th>Ano de publicação</th>
+                <th>Autor</th>
+                <th>Origem</th>
+                <th>Gênero</th>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Jimmy Liao</td>
+                <td>Taiwan</td>
+                <td>Infantil</td>
+            </tr>
+        </table>
+        <button><a href="#home">inicio</a></button>
+    </section>
+
+    
+</body>
+
+</html>
